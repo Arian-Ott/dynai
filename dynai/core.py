@@ -1,10 +1,10 @@
 import os
 import random
-import time
 
-from bs4 import BeautifulSoup
 import requests
 import validators
+from bs4 import BeautifulSoup
+
 from dynai.Handler import WrongURLProvided
 
 
@@ -19,8 +19,8 @@ class core:
         self._word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
         self._response = requests.get(self._word_site)
         self._WORDS = self._response.content.splitlines()
-        self.rinta = random.randint(0, len(self._WORDS) - 1)
-        self._name = self._WORDS[self.rinta]
+        self._rinta = random.randint(0, len(self._WORDS) - 1)
+        self._name = self._WORDS[self._rinta]
         self._name = str(self._name).replace("b'", "")
         self._name = str(self._name).replace("'", "")
         self._url = ""
