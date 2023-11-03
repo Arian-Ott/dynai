@@ -1,10 +1,8 @@
 import os
 import random
-
 import requests
 import validators
 from bs4 import BeautifulSoup
-
 from dynai.Handler import WrongURLProvided
 
 

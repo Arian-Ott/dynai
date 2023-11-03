@@ -13,7 +13,9 @@ setup(
     license='MIT License',
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Education",
+        "License :: OSI Approved :: MIT Licence",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -28,5 +30,5 @@ setup(
     include_package_data=True,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    install_requires=["requests",  "bs4", "validators"]
+    install_requires=["requests",  "bs4", "validators", "urllib3", ""]
 )
