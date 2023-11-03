@@ -30,7 +30,7 @@ release = '0.1.2'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'recommonmark',
+   
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode'
 ]
