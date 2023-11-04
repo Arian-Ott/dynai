@@ -15,7 +15,7 @@ class core:
         """
         self._output_dir = None
         self._word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
-        self._response = requests.get(self._word_site)
+        self._response = requests.get(self._word_site, verify=True)
         self._WORDS = self._response.content.splitlines()
         self._rinta = random.randint(0, len(self._WORDS) - 1)
         self._name = self._WORDS[self._rinta]
@@ -28,8 +28,10 @@ class core:
             self._url = url
         else:
             raise WrongURLProvided(url, "")
+
         self._page = requests.get(self._url)
         self._bs = BeautifulSoup(self._page.content, 'html.parser').prettify()
+
 
     def set_name(self, name):
         """Sets the name of the core.
@@ -66,7 +68,6 @@ class core:
         :rtype: str
         """
         return self._bs
-
     def scrape_to_output(self, extension):
         """Scrapes the webpage and converts the webpage to a file in the output directory with the specified _extension.
         If the folder does not exist the folder will be created.

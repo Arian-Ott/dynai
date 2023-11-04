@@ -22,13 +22,14 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
-        "Operating System :: OS Independent"
+        "Operating System :: OS Independent",
+
     ],
     author='Arian Ott',
     author_email='learning.ott@gmail.com',
-    description='Dynamic AI',
+    description='Dynamic AI Tools',
     include_package_data=True,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    install_requires=["requests",  "bs4", "validators", "urllib3", ""]
+    install_requires=["requests",  "bs4", "validators", "urllib3", "os"]
 )
