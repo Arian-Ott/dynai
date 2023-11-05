@@ -9,3 +9,9 @@ words.txt
 /venv
 /tests
 .idea
+/docs
+Makefile
+make.bat
+text.json
+words.txt
+wordlist.py
