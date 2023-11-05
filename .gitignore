@@ -2,7 +2,8 @@
 .travis.yml
 main.py
 
-
+/docs
+.readthedocs.yaml
 wordlist.py
 words.txt
 /venv
