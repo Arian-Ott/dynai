@@ -49,7 +49,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rdt_theme'
+html_theme = 'sphinx_rtd_theme'
 sys.path.insert(0, os.path.abspath('../'))
 
 
