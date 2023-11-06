@@ -2,14 +2,13 @@
 .travis.yml
 main.py
 
-/docs
 .readthedocs.yaml
 wordlist.py
 words.txt
 /venv
 /tests
 .idea
-/docs
+
 Makefile
 make.bat
 text.json
