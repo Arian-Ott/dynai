@@ -1,4 +1,4 @@
-uild:
+build:
   os: ubuntu-latest
   tools:
     python: "3.9"
