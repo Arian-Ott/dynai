@@ -7,13 +7,13 @@ Welcome to dynai's documentation!
 =================================
 
 
-[...]
+
 .. toctree::
    :maxdepth: 2
 
    readme
    changelog
-[...]
+
 
 
 Indices and tables
